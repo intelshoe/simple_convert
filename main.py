@@ -10,7 +10,7 @@ Author: mp
 
 
 print("Convert what type of value?\n")
-print("Choose d for decimal, h for hex, b for binary, or a for ascii\n")
+print("Choose b for binary\n")
 convertfrom = str(input())
 print("Ok, please enter the value: ")
 start_value = int(input())
@@ -18,7 +18,7 @@ print(f"Thank you, we will start with {start_value}.\n")
 
 # choose what to convert the value into
 print("And what would you like to convert this to?\n")
-print("Choose d for decimal, h for hex, b for binary, or a for ascii\n")
+print("Choose d for decimal\n")
 convert2 = str(input())
 
 dnum = 0
