@@ -23,10 +23,11 @@ convert2 = str(input())
 
 dnum = 0
 i = 1
-# runs the conversions
+# convert decimal to hex
 if convertfrom == "d" and convert2 == "h":
 	print("\n" + hex(start_value))
 
+# convert binary to decimal
 elif convertfrom == "b" and convert2 == "d":
 	while start_value != 0:
 		rem = start_value % 10
@@ -36,24 +37,30 @@ elif convertfrom == "b" and convert2 == "d":
 
 	print("\nEquivalent Decimal Value = ", dnum)
 
+# convert decimal to ascii
 elif convertfrom == "d" and convert2 == "a":
 	print(chr(start_value))
 
+# convert hex to ascii
 elif convertfrom == "h" and convert2 == "a":
 	print(bytearray.fromhex(start_value).decode())
 
+# convert hex to decimal
 elif convertfrom == "h" and convert2 == "d":
 	dnum = int(start_value, 16)
 	print(f"\n {dnum}")
 
+# convert decimal to binary
 elif convertfrom == "d" and convert2 == "b":
 	dnum = bin(start_value)
 	print(f"\n {dnum}")
 
+# convert ascii to decimal
 elif convertfrom == "a" and convert2 == "d":
 	dnum=ord(start_value)
 	print(f"\n {dnum}")
-	
+
+# if nothing fits quit the program
 else:
 	print("The input was not correct, please try again.")
 	quit()
