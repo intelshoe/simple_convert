@@ -29,16 +29,16 @@ if convertfrom == "d":
 elif convertfrom == "h":
 	pass
 elif convertfrom == "b" and convert2 == "d":
-	while start_value!=0:
-    	rem = start_value%10
-    	dnum = dnum + (rem*i)
-    	i = i*2
-    	start_value = int(start_value/10)
+	while start_value != 0:
+		rem = start_value % 10
+		dnum = dnum + (rem*i)
+		i = i*2
+		start_value = int(start_value/10)
 
 	print("\nEquivalent Decimal Value = ", dnum)
 	
 elif convertfrom == "a":
 	pass
-else
+else:
 	Print("The input was not correct, please try again.")
 	quit()
