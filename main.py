@@ -50,5 +50,5 @@ elif convertfrom == "a" and convert2 == "d":
 	dnum=ord(start_value)
 	print(f"\n {dnum}")
 else:
-	Print("The input was not correct, please try again.")
+	print("The input was not correct, please try again.")
 	quit()
